@@ -1,6 +1,6 @@
 import { FeatureProvider } from '#libs/feature';
 import { AppRouter } from './App.router.tsx';
-import { featureHandler } from './app.features.ts';
+import { featureHandler } from './app.features.tsx';
 import './styles/app.scss';
 
 /**
