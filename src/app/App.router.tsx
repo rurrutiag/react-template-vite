@@ -1,5 +1,5 @@
 import { createRouter } from '#libs/router';
-import { routes } from './app.routes.ts';
+import { routes } from './app.routes.tsx';
 
 // creates a router
 const Router = createRouter({

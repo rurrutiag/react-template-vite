@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { beforeAll, describe, expect, test } from 'vitest';
 import { createRouter } from '#libs/router';
-import { routes } from '../app/app.routes.ts';
+import { routes } from '../app/app.routes.tsx';
 
 describe('App', () => {
 	const env = import.meta.env.APP_ENV;
