@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { act, render, screen } from '@testing-library/react';
 import { afterAll, beforeAll, describe, test, vi } from 'vitest';
 import { FeatureHandler, FeatureProvider } from '#libs/feature';
 import { createRouter } from '#libs/router';
@@ -32,8 +32,11 @@ describe(DetailPage, () => {
 	// tests
 	test('fetch data clicking button', async () => {
 		const button = screen.getByRole('button', { name: 'Fetch' });
-		button.click();
-		await vi.advanceTimersToNextTimerAsync();
+
+		await act(async () => {
+			button.click();
+			await vi.advanceTimersToNextTimerAsync();
+		});
 
 		screen.getByRole('heading', { name: 'anyValue' });
 	});
