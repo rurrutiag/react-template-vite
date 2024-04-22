@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+import { Suspense, lazy } from 'react';
 import { Outlet, type RouteObject } from 'react-router-dom';
 import { isLayoutRoute } from '../types/is-layout-route.ts';
 import type {
@@ -39,8 +39,14 @@ export const createRoutes = (routes: RouteDefinition[]): RouteObject[] => {
 
 		route.path ??= '';
 
+		// lazy load component for chunk splitting
+		if (route.lazy) {
+			route.Component ??= lazy(route.lazy);
+			route.lazy = undefined;
+		}
+
 		if (route.children) createRoutes(route.children);
 	}
 
-	return routes;
+	return routes as RouteObject[];
 };

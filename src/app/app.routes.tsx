@@ -1,6 +1,6 @@
-import { lazy } from 'react';
 import { type RouteDefinition } from '#libs/router';
 import { AppLayout } from './layouts/app/App.layout.tsx';
+import MainPage from './pages/main/Main.page.tsx';
 
 /**
  * Routes definition.
@@ -24,12 +24,10 @@ export const routes = {
 			Layout: AppLayout,
 			children: [
 				{
-					Component: lazy(() => import('./pages/main/Main.page.tsx')),
+					Component: MainPage,
 				},
 				{
-					Component: lazy(
-						() => import('./pages/detail/Detail.page.tsx'),
-					),
+					lazy: () => import('./pages/detail/Detail.page.tsx'),
 					loader: () => Promise.resolve('a promise'),
 					path: 'detail/:id?',
 				},
