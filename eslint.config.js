@@ -558,6 +558,7 @@ export default [
 					'custom-groups': { top: 'id' },
 					groups: ['top', 'unknown'],
 					'ignore-case': false,
+					'ignore-pattern': ['features', 'manualChunks'],
 					order: 'asc',
 					'partition-by-comment': '#region**',
 					'partition-by-new-line': true,

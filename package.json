@@ -40,7 +40,7 @@
 		"jotai": "2.8.0",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"react-router-dom": "6.22.3"
+		"react-router-dom": "6.23.0"
 	},
 	"devDependencies": {
 		"@calvear/env": "2.10.2",
@@ -48,7 +48,7 @@
 		"@stryker-mutator/typescript-checker": "8.2.6",
 		"@stryker-mutator/vitest-runner": "8.2.6",
 		"@testing-library/dom": "10.0.0",
-		"@testing-library/react": "15.0.2",
+		"@testing-library/react": "15.0.4",
 		"@testing-library/user-event": "14.5.2",
 		"@types/eslint": "8.56.10",
 		"@types/node": "20.12.7",
@@ -69,13 +69,13 @@
 		"eslint-plugin-testing-library": "6.2.2",
 		"eslint-plugin-tsdoc": "0.2.17",
 		"eslint-plugin-unicorn": "52.0.0",
-		"eslint-plugin-vitest": "0.5.3",
+		"eslint-plugin-vitest": "0.5.4",
 		"globals": "15.0.0",
 		"jsdom": "24.0.0",
 		"postcss": "8.4.38",
 		"prettier": "3.2.5",
 		"sass": "1.75.0",
-		"stylelint": "16.3.1",
+		"stylelint": "16.4.0",
 		"stylelint-config-rational-order": "0.1.2",
 		"stylelint-config-recommended": "14.0.0",
 		"stylelint-config-standard": "36.0.0",

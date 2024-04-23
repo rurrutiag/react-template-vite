@@ -19,13 +19,11 @@ export default {
 				manualChunks: {
 					/* elements order is important because chunks
 					may import previously generated/grouped chunks */
-					/* eslint-disable perfectionist/sort-objects */
 					react: ['react', 'react-dom'],
 					router: ['react-router-dom'],
 					store: ['jotai'],
 					'lib-feature': ['./src/libs/feature/index.ts'],
 					'lib-router': ['./src/libs/router/index.ts'],
-					/* eslint-enable */
 				},
 			},
 		},
